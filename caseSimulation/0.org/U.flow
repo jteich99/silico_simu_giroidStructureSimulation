@@ -42,8 +42,7 @@ boundaryField
     giroide_inlet2
     {
         type                flowRateInletVelocity;
-		// volumetricFlowRate  $flow;
-		volumetricFlowRate  0;
+		volumetricFlowRate  $flow;
 		value uniform       (0 0 0);
     }
 }
