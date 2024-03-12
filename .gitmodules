@@ -1,0 +1,3 @@
+[submodule "caseGeometry"]
+	path = caseGeometry
+	url = git@github.com:StammBio/silico_simu_salomeGiroidGeometries.git

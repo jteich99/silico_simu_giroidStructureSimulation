@@ -1,0 +1,52 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  11
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      surfaceFeatureExtractDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// surfaces ("finalFile.stl");
+// 
+// // Identify a feature when angle between faces < includedAngle
+// includedAngle       30;
+// 
+// subsetFeatures
+// {
+//     // Keep nonManifold edges (edges with >2 connected faces)
+//     nonManifoldEdges       no;
+// 
+//     // Keep open edges (edges with 1 connected face)
+//     openEdges       yes;
+// }
+
+
+finalFile
+{
+  
+  extractionMethod  extractFromSurface;
+  // extractionMethod  none;
+  // extractionMethod  extractFromFile;
+
+  surfaces (finalFile.stl);
+
+  includedAngle     30;
+
+  subsetFeatures
+  {
+    // Keep nonManifold edges (edges with >2 connected faces)
+    nonManifoldEdges       no;
+
+    // Keep open edges (edges with 1 connected face)
+    openEdges       yes;
+  }
+}
+
+// ************************************************************************* //

@@ -1,0 +1,15 @@
+# directorio para la simulación de la malla creada
+
+### inputs
+> los inputs son cargados en el archivo **includeSettingsSimulation.py**, definiendo las variables como se definen en python
+
+inputs a proveer:
+- número de procesadores a utilizar
+- tipo de condición de borde a poner en el inlet
+    - se tiene implementadas de poner un caudal o poner una presión
+- valor de la condición de borde impuesta
+    - luego el script `includeSettingsSimulationTransform.py` lo renombra pressure o flow según sea el caso
+
+### outputs
+- problema simulado, visualizable en [Paraview](https://www.paraview.org/) abriendo archivo **mesh.foam**.
+- en la terminal se pueden observar los tiempos que demoraron cada paso de la simulación, lo cuál podría ser útil para comparar los requerimientos computacionales entre dispositivos, mallas y condiciones de borde.

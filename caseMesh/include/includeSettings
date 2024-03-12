@@ -1,0 +1,47 @@
+// FILE WITH BASE VARIABLES TO BE IMPORTED BY openFoam DICTIONARIES
+ 
+// NUMBER OF PROCESSOR TO USE
+nProcs 8;
+
+// CORNERS OF blockMeshDict BACKGROUND MESH
+vertex0_x -2.0485973;
+vertex0_y -2.0485973;
+vertex0_z -22.1752335;
+vertex1_x 28.1764875;
+vertex1_y -2.0485973;
+vertex1_z -22.1752335;
+vertex2_x 28.1764875;
+vertex2_y 28.1764875;
+vertex2_z -22.1752335;
+vertex3_x -2.0485973;
+vertex3_y 28.1764875;
+vertex3_z -22.1752335;
+vertex4_x -2.0485973;
+vertex4_y -2.0485973;
+vertex4_z 22.1752335;
+vertex5_x 28.1764875;
+vertex5_y -2.0485973;
+vertex5_z 22.1752335;
+vertex6_x 28.1764875;
+vertex6_y 28.1764875;
+vertex6_z 22.1752335;
+vertex7_x -2.0485973;
+vertex7_y 28.1764875;
+vertex7_z 22.1752335;
+
+// AMOUNT OF CELLS IN EACH DIRECTION
+cells_x 201;
+cells_y 201;
+cells_z 295;
+
+// INTERNAL POINT FOR SNAPPY
+intPoint_x 0.8164966;
+intPoint_y 0.8164966;
+intPoint_z 0.0;
+
+// SNAPPY DICT REFINEMENT LEVEL SETTINGS
+level_eMesh 1;
+level_min_refinementSurfaces 0;
+level_max_refinementSurfaces 0;
+level_refinementRegion 0;
+snapControls_tolerance 1;
