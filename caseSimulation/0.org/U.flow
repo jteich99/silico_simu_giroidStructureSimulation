@@ -36,13 +36,13 @@ boundaryField
     giroide_inlet1
     {
         type                flowRateInletVelocity;
-		volumetricFlowRate  $flow;
+		volumetricFlowRate  $flow1;
 		value uniform       (0 0 0);
     }
     giroide_inlet2
     {
         type                flowRateInletVelocity;
-		volumetricFlowRate  $flow;
+		volumetricFlowRate  $flow2;
 		value uniform       (0 0 0);
     }
 }

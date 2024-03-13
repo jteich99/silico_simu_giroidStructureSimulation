@@ -7,7 +7,9 @@ nProcs = 8
 
 # BOUNDARY CONDITION
 BC = 'flow' # 'pressure' or 'flow'
-value = 1.15741e-5
+value1 = 1.15741e-5 # flow for inlet1
+value2 = 1.15741e-5 # flow for inlet2
+# total flow = flow1 + flow2
 
 # VISCOSITY
 viscosity = 0.01 / 1000
