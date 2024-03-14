@@ -68,13 +68,14 @@ echo ------------------------------------------------
 echo sampling Co number
 
 max=0                       # assuming they're non-negative integers!
-for x in ../caseFlow$sequenceTypeNum/[0-9]* ; do 
+# for x in ../caseFlow$sequenceTypeNum/[1-9]* ; do 
+for x in [1-9]* ; do 
     n=${x##*/};                # take just the number so that comparisons work 
     [ "$n" -gt "$max" ] && max=$n 
 done
 latestTime=$max
 
-python3 scripts/CoMax.py '$latestTime'
+python3 scripts/CoMax.py $latestTime
 
 echo 
 echo ------------------------------------------------
