@@ -65,6 +65,20 @@ runApplication reconstructPar -latestTime
 echo 
 echo ------------------------------------------------
 
+echo sampling Co number
+
+max=0                       # assuming they're non-negative integers!
+for x in ../caseFlow$sequenceTypeNum/[0-9]* ; do 
+    n=${x##*/};                # take just the number so that comparisons work 
+    [ "$n" -gt "$max" ] && max=$n 
+done
+latestTime=$max
+
+python3 scripts/CoMax.py '$latestTime'
+
+echo 
+echo ------------------------------------------------
+
 # ---------------------------------------------------------------
 
 # rm -rf processor*
