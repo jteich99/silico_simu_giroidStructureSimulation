@@ -5,7 +5,7 @@
 
 echo ------- Simulation -------
 
-source ../../scripts/bashFunction.sh
+# source ../../scripts/bashFunction.sh
 
 mkdir -p include
 mkdir -p 0
