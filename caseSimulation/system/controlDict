@@ -43,4 +43,25 @@ timePrecision   6;
 
 runTimeModifiable true;
 
+functions
+{
+    Co
+    {
+        // Mandatory entries (unmodifiable)
+        type            CourantNo;
+        libs            (fieldFunctionObjects);
+        field           <phi>;
+        result          <fieldResult>;
+        region          region0;
+        enabled         true;
+        log             true;
+        timeStart       0;
+        timeEnd         1000;
+        executeControl  timeStep;
+        executeInterval 1;
+        writeControl    timeStep;
+        writeInterval   1;
+    }
+}
+
 // ************************************************************************* //
