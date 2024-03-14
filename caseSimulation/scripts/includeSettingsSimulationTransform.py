@@ -17,7 +17,8 @@ with open('include/includeSettings','w') as file:
         file.writelines(f'pressure {value / density};\n')
     elif BC == 'flow':
         file.writelines('// FIXED FLOW IN INLET BOUNDARY CONDITION\n')
-        file.writelines(f'flow {value};\n')
+        file.writelines(f'flow1 {value1};\n')
+        file.writelines(f'flow2 {value2};\n')
     
     file.writelines('\n// VISCOSITY\n')
     file.writelines(f'viscosity {viscosity};\n')

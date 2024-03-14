@@ -1,5 +1,23 @@
 # directorio para la simulación de la malla creada
 
+### example of `includeSettingsSimulationBase.py`
+```python
+# NUMBER OF PROCESSOR TO USE
+nProcs = 8
+
+# BOUNDARY CONDITION
+BC = 'flow' # 'pressure' or 'flow'
+value1 = 1.15741e-5 # flow for inlet1
+value2 = 1.15741e-5 # flow for inlet2
+# total flow = flow1 + flow2
+
+# VISCOSITY
+viscosity = 0.01 / 1000
+
+# DENSITY
+density = 1000
+```
+
 ### inputs
 > los inputs son cargados en el archivo **includeSettingsSimulation.py**, definiendo las variables como se definen en python
 

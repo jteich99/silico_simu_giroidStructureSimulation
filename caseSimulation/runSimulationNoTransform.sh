@@ -7,10 +7,10 @@ echo ------- Simulation -------
 
 source ../../scripts/bashFunction.sh
 
-mkdir -p include
+# mkdir -p include
 mkdir -p 0
-cp -rf includeSettingsSimulationBase.py includeSettingsSimulation.py
-python3 scripts/includeSettingsSimulationTransform.py
+# cp -rf includeSettingsSimulationBase.py includeSettingsSimulation.py
+# python3 scripts/includeSettingsSimulationTransform.py
 source include/includeSettings.sh
 
 rm -rf log*
