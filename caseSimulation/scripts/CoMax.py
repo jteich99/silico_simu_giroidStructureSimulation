@@ -44,7 +44,8 @@ with open('Co.sh', 'w') as outputCoFile, open(f'{latestTime}/Co', 'r') as source
 
     outputCoFile.writelines(
         f'maxCo={maxCo}\n' +
-        f'deltaTime={ deltaTime }'
+        f'originalDeltaTime={ deltaTime }\n' +
+        f'deltaTime={ deltaTime }\n'
     )
         # finally:
         #     pass
